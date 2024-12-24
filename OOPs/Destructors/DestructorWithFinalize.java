@@ -8,6 +8,7 @@ class Resource {
 public class DestructorWithFinalize {
     public static void main(String[] args) {
         Resource res = new Resource();
+        System.out.println(res.toString()); // Use the variable
         res = null; // Make the object eligible for garbage collection
 
         // Request garbage collection
